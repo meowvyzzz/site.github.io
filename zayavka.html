@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Заявка на вступление</title>
+  <link rel="stylesheet" href="zayavka.css">
+</head>
+<body>
+    <div class="container">
+        <form action="onlinezayavka.php" method="post">
+            <h2>Хотите вступить в наши ряды?</h2>
+            
+            <label for="first-name" class="label">Имя:</label>
+            <input name="first-name" type="text" class="input-field" required placeholder="Введите Ваше имя">
+            
+            <label for="last-name" class="label">Фамилия:</label>
+            <input name="last-name" type="text" class="input-field" required placeholder="Введите Вашу фамилию">
+
+            <label for="email" class="label">Электронная почта:</label>
+            <input name="email" type="email" class="input-field" required placeholder="Введите Вашу почту">
+            
+            <label for="about" class="label">Коротко о себе:</label>
+            <input name="about" type="text" class="input-field" required placeholder="Почему Вы хотите стать активистом?">
+<a href="index.html">
+            <button type="submit" class="submit-button">Отправить заявку</button>
+</a>
+        </form>
+    </div>
+    <img src="лого.png" class="image2" alt="лого" width="10%">
+        <h1 class="text2">KOKSHEGREEN</h1>
+</body>
+</html>
