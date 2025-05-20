@@ -1,0 +1,415 @@
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+video {
+    width: 100%; 
+    height: auto; 
+    filter: brightness(50%);
+    margin-top: -20%;
+}
+.menu1{
+    position: absolute;
+      text-decoration: none; 
+      font-family: Arial, sans-serif;  
+      color: #000000; 
+      left: 54.5%;
+      margin-top:3.2%;
+      z-index: 1;
+      font-size: 1vw;
+    }
+    .menu2{
+      position: absolute;
+        text-decoration: none; 
+        font-family: Arial, sans-serif;  
+        color: #000000; 
+        left: 63%;
+        margin-top: 3.2%;
+        z-index: 1;
+        font-size: 1vw;
+        
+      }
+      .menu3{
+        position: absolute;
+          text-decoration: none; 
+          font-family: Arial, sans-serif;  
+          color: #000000; 
+          left: 70.5%;
+          margin-top: 3.2%;
+          z-index: 1;
+          font-size: 1vw;
+        }
+        .menu4{
+          position: absolute;
+            text-decoration: none; 
+            font-family: Arial, sans-serif;  
+            color: #000000; 
+            left: 78%;
+            margin-top: 3.2%;
+            z-index: 1;
+            font-size: 1vw;
+          }
+          .menu5{
+            position: absolute;
+              text-decoration: none; 
+              font-family: Arial, sans-serif;  
+              color: #000000; 
+              left: 87%;
+              margin-top: 3.2%;
+              z-index: 1;
+              font-size: 1vw;
+            }
+            video {
+              width: 100%; 
+              height: auto; 
+              filter: brightness(50%);
+              margin-top: -2%;
+              position: fixed;
+              z-index: -1;
+          }
+          .text4{
+            position: absolute;
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 900;
+            margin-top: -173%;
+            margin-left: 34%;
+            font-size: 6vw;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+          }
+          .image2{
+            position: absolute;
+            margin-left: 9%;
+            margin-top: -54%;
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+            z-index: 1;
+          }
+          .text2{
+            position: absolute;
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 200;
+            font-size: 2vw;
+            margin-top: -52%;
+            margin-left: 12%;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+          }
+            .image1{
+              position: absolute;
+              margin-left: 47%;
+              margin-top: 1.4%;
+              filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+              z-index: 1;
+            }
+            @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.slides {     
+    padding: 0;     
+    width: 400px;  
+    height: 250px;  
+    display: block;     
+    margin: 0 auto;     
+    position: relative;     
+    margin: 70% auto;      
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);     
+    border-radius: 10px;   
+}  
+
+.slides * {     
+    user-select: none;     
+    -ms-user-select: none;     
+    -moz-user-select: none;     
+    -khtml-user-select: none;     
+    -webkit-user-select: none;     
+    -webkit-touch-callout: none; 
+}  
+
+.slides input { 
+    display: none; 
+}  
+
+.slide-container { 
+    display: block; 
+}  
+
+.slide {     
+    top: 0;     
+    opacity: 0;     
+    width: 400px;    
+    height: 250px; 
+    display: block;     
+    position: absolute;      
+    transform: scale(0);      
+    transition: all .7s ease-in-out; 
+}  
+
+.slide img {     
+    width: 100%;     
+    height: 100%; 
+}  
+
+.nav label {     
+    width: 100px;   
+    height: 100%;     
+    display: none;     
+    position: absolute;      
+    opacity: 0;     
+    z-index: 9;     
+    cursor: pointer;      
+    transition: opacity .2s;      
+    color: #FFF;     
+    font-size: 78pt;  
+    text-align: center;     
+    line-height: 200px;  
+    font-family: "Varela Round", sans-serif;     
+    background-color: rgba(255, 255, 255, .3);     
+    text-shadow: 0px 0px 15px rgb(119, 119, 119); 
+}  
+
+.slide:hover + .nav label { 
+    opacity: 0.5; 
+}  
+
+.nav label:hover { 
+    opacity: 1; 
+}  
+
+.nav .next { 
+    right: 0; 
+}  
+
+input:checked + .slide-container  .slide {     
+    opacity: 1;      
+    transform: scale(1);      
+    transition: opacity 1s ease-in-out; 
+}  
+
+input:checked + .slide-container .nav label { 
+    display: block; 
+}  
+
+.nav-dots {   
+    width: 100%;   
+    bottom: 9px;   
+    height: 11px;   
+    display: block;   
+    position: absolute;   
+    text-align: center; 
+}  
+
+.nav-dots .nav-dot {   
+    top: -5px;   
+    width: 7px;  
+    height: 7px;   
+    margin: 0 4px;   
+    position: relative;   
+    border-radius: 100%;   
+    display: inline-block;   
+    background-color: rgba(0, 0, 0, 0.6); 
+}  
+
+.nav-dots .nav-dot:hover {   
+    cursor: pointer;   
+    background-color: rgba(0, 0, 0, 0.8); 
+}  
+
+input#img-1:checked ~ .nav-dots label#img-dot-1, 
+input#img-2:checked ~ .nav-dots label#img-dot-2, 
+input#img-3:checked ~ .nav-dots label#img-dot-3, 
+input#img-4:checked ~ .nav-dots label#img-dot-4, 
+input#img-5:checked ~ .nav-dots label#img-dot-5, 
+input#img-6:checked ~ .nav-dots label#img-dot-6 {   
+    background: rgba(0, 0, 0, 0.8); 
+}
+
+.text4{
+    position: absolute;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-top: -147%;
+    margin-left: 35%;
+    font-size: 6vw;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+.image2{
+    position: absolute;
+    margin-top: -108%;
+    margin-left: -5%;
+    z-index: -1;
+}
+.text5{
+    position: absolute;
+    color: #302f2f;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-top: -107%;
+    margin-left: 19%;
+    font-size: 2.2vw;
+    z-index: 1;
+}
+.image4{
+  position: absolute;
+  margin-top: -100%;
+  z-index: -1;
+  
+}
+.image5{
+  position: absolute;
+  margin-left: -2.2%;
+  margin-top: -168%;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+}
+.text6{
+  position: absolute;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1.4vw;
+  margin-top: -165.9%;
+  margin-left: 9%;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+.text7{
+  position: absolute;
+  color: #1a1919;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1.6vw;
+  margin-top: -56%;
+  margin-left: 3%;
+}
+
+.image8{
+  position: absolute;
+  margin-left: -2.2%;
+  margin-top: -39.6%;
+  z-index: -1;
+}
+.image9{
+  position: absolute;
+  margin-left: -2.2%;
+  margin-top: -12.6%;
+}
+.image43{
+  position: absolute;
+  margin-left: -8%;
+  margin-top: -9%; 
+  z-index: 1;
+}
+.text47{
+  position: absolute;
+  margin-left: 2.5%;
+  margin-top: -26%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.5vw;
+  z-index: 1;
+}
+.text48{
+  position: absolute;
+  margin-left: 2.5%;
+  margin-top: -22%;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2vw;
+  z-index: 1;
+}
+.contacts{
+  position: absolute;
+  margin-left: 41.5%;
+  margin-top:-0.1%;
+  text-align: left;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.4vw;
+  z-index: 1;
+  opacity: 40%;
+}
+.image50{
+  position: absolute;
+  margin-left:42%;
+margin-top: -3%;
+  z-index: 1;
+  transition: 3s; 
+  display: block; 
+  }
+  .image50:hover{
+  transform: scale(1.3); 
+  }
+.image51{
+  position: absolute;
+  margin-left:45.6%;
+margin-top: -3%;
+  z-index: 1;
+  transition: 3s; 
+  display: block; 
+  }
+  .image51:hover{
+  transform: scale(1.3); 
+  }
+.image52{
+  position: absolute;
+  margin-left:49.4%;
+  margin-top: -3%;
+  z-index: 1;
+  transition: 3s; 
+  display: block; 
+  }
+  .image52:hover{
+  transform: scale(1.3); 
+  }
+.image53{
+  position: absolute;
+  margin-left:53%;
+margin-top: -3%;
+  z-index: 1;
+  transition: 3s; 
+  display: block; 
+  }
+  .image53:hover{
+  transform: scale(1.3); 
+  }
+  .image41{
+  position: absolute;
+  margin-left: -8%;
+margin-top: -28.4%;
+  z-index: -1;
+}
+.image42{
+  position: absolute;
+  margin-left: -5%;
+  margin-top: 115%; 
+  z-index: 1;
+}
+
+.textt{
+  position: absolute;
+  color: #1a1919;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1.6vw;
+  margin-top: -66%;
+  margin-left: 3%;
+}
+.imagee{
+  z-index: 1;
+  position: absolute;
+  margin-top: -37%;
+  margin-left: 42%;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+  transition: 1s; 
+  display: block; 
+  }
+  .imagee:hover{
+  transform: scale(1.1); 
+  }
